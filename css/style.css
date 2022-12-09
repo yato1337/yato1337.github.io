@@ -1,0 +1,245 @@
+*{
+    font-family:'Roboto';
+}
+
+header {
+    position: relative;
+   
+  
+}
+ 
+
+nav{
+    height: 50px;
+    background-color: #252525;
+    width: 100%;
+    z-index: 2;          /*  а это чтоб оно было над всеми элементами  */
+    position: fixed;     /* зафиксировали меню */
+    
+    
+
+ }
+
+.menu{
+   
+    display:flex;
+    justify-content:space-between ;
+    padding: 13px 70px;                     /*  было 10px вместо 13 , но из-за этого был небольшой отступ , мы исправили таким методом(поставив 13)*/
+    margin:0;
+    list-style-type: none;                     /*  это для того , чтобы не было точек вначале эл-тов списка */
+    
+ }
+
+.menu .menu_link{
+    text-decoration:none;                               /*  это для того , чтобы не было подчеркивания у ссылки  */
+    color: #ffff;
+    font-size: 15px;
+    font-weight: 300;
+
+
+ }
+
+.menu .menu_item {
+    border-right: 2px dotted black;                /* мы сделали разделителие с помощью border-right */
+    padding-right: 28px;
+ }
+
+.subheader{
+    position: absolute;
+    height: 87px;
+    background-color:rgba(0, 0, 0, .6);             /* задаем прозрачность */
+    width: 100%;
+    margin-top: 50px;                           /*   я сделал это для того . чтобы меню при фиксации не накладывалось на этот элемент  */
+    
+ }
+
+.subheader .subheader_logo {
+    display: block;                         /* сделали его блочным , чтоб раобтал  margin */
+    max-width: 100%;                        /* для того чтобы можно было подставить любую картинку и она не будет вылезать за пределы колонки */
+    margin-top: 16px;
+
+ }
+
+.subheader .subheader_official{
+    font-weight: 100;
+    font-size: 13px;
+    opacity: 0.5;
+    color: #FFFFFF;
+    margin-top: 6px;
+ }
+
+.subheader .subheader_call{
+    font-weight: 300;
+    font-size: 12px;
+    color: #FFFFFF;
+    margin-top: 19px;
+    text-align: right;
+
+ }
+
+
+.subheader .subheader_phone{
+    display: block;
+    font-weight: 400;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #FFFFFF;  
+    text-align: right;
+    margin-top: 8px;
+    line-height: 12px;                         /*  без нее выглядит некрасиво */
+    text-decoration:none;    
+ }
+
+.subheader .subheader_btn{
+    margin-top: 19px;
+    width: 172px;
+    height: 46px;
+    background-image: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+    box-shadow: inset 0px -3px 0px rgba(0, 0, 0, .12);
+    border: none;
+    font-weight: 400;
+    font-size: 14px;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+    border-radius: 4px;
+   
+
+ }
+
+.promo{
+    min-height: 800px;
+    background: url('../img/bg/main_bg.png') center center/cover no-repeat;
+    padding: 150px 0 135px 0;
+ }
+
+.promo .promo_header{
+    font-weight: 900;
+    font-size: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    line-height: 60px;
+    margin:0;
+
+ }
+
+.promo .promo_subheader{
+    font-weight: 900;
+    font-size: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    line-height: 36px;
+    margin:0;
+    margin-top: 22px;
+
+ }
+
+.promo .promo_descr{
+    margin-top: 23px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 985px;
+ }
+
+.promo .promo_btn{
+    display: block;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 259px;
+    height: 63px;
+    background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+    box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    margin: 118px auto 0 auto;
+    color: white;
+    border:none;
+    }
+
+    .advantage{
+        min-height: 850px;
+        padding: 18px 0 65px 0;
+ }
+
+
+.lable {
+    height: 27px;
+    width: 115px;
+    border-radius: 0px;
+    background:#252525;
+    font-weight: 400;
+    font-size: 11px;
+    text-align: center;
+    text-transform: uppercase;
+    color:#FFFFFF;
+    margin: 0 auto;
+    margin-top: 18px;
+    padding: 5px 12px;
+
+    }
+
+
+.title {
+    font-weight: 700;
+    font-size: 38px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #222222;
+    margin-top: 18px;
+
+
+    }
+
+
+.advantage .advantage_item .advantage_round{
+        width: 116px;
+        height: 116px;
+        background: #1EACC7;
+        border-radius:100%;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        margin-right: 26px;
+    } 
+
+    .advantage .advantage_item .advantage_item_descr {
+        width: 400px;
+        margin-left: 25px;
+    }
+
+    .advantage .advantage_item{
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        margin-top: 26px;
+    }
+    .advantage .advantage_item .advantage_item_descr .advantage_subtitle {
+    color:#1EACC7;
+    font-weight: 400;
+    font-size: 17px;
+
+    }
+
+    .advantage .advantage_item .advantage_item_descr .advantage_item_text {
+        color: #202020;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 21px;
+    
+
+    }
+
+    
+      
+    
+
+    
+    
